@@ -1,0 +1,39 @@
+<!-- HEADER -->
+<div style="background-color: #0056b3; color: white; padding: 15px; text-align: center;">
+    <h2>CITY OF EKURHULENI</h2>
+    <p>Community Service Delivery System</p>
+</div>
+
+<style>
+    body { font-family: Arial; background: #f4f4f4; }
+    .content { padding: 20px; }
+    .search-bar { width: 100%; padding: 10px; margin-bottom: 10px; }
+    .map { height: 150px; background: #ddd; text-align: center; padding-top: 60px; margin-bottom: 10px; }
+    .input { width: 100%; padding: 10px; margin-bottom: 10px; }
+    .grid { display: flex; gap: 10px; }
+    .box { flex: 1; padding: 20px; background: white; text-align: center; border: 2px solid #ccc; }
+    .error { border-color: red; }
+    .submit { width: 100%; padding: 10px; margin-top: 10px; }
+</style>
+
+<div class="content">
+    <h2>Report an Issue</h2>
+
+    <input class="search-bar" placeholder="Search services...">
+
+    <div class="map">📍 Tap to Pin Location</div>
+
+    <!-- AI IMPROVEMENT: Manual entry -->
+    <input class="input" placeholder="Type your address here">
+
+    <p>Select Category:</p>
+
+    <div class="grid">
+        <!-- AI IMPROVEMENT: Validation -->
+        <div class="box error">💧 Water <br><small>* Required</small></div>
+        <div class="box">⚡ Electricity</div>
+        <div class="box">🛣️ Roads</div>
+    </div>
+
+    <button class="submit" disabled>Submit Report</button>
+</div>
